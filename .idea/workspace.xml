@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście">
-      <change afterPath="$PROJECT_DIR$/src/optimize.py" afterDir="false" />
+    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-implementation of optimization problem&#10;-not run just checked for syntax problems&#10;-next commit expected: today">
+      <change afterPath="$PROJECT_DIR$/src/exhaustive_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hill_climbing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sample_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sample_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generate_rand_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generate_rand_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimize.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +39,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.generate_rand_set.executor&quot;: &quot;Run&quot;,
+    &quot;Python.optimize.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -72,7 +77,9 @@
       <workItem from="1718136599927" duration="477000" />
       <workItem from="1718137221634" duration="28000" />
       <workItem from="1718137309363" duration="334000" />
-      <workItem from="1718187707078" duration="3989000" />
+      <workItem from="1718187707078" duration="4315000" />
+      <workItem from="1718214253296" duration="5673000" />
+      <workItem from="1718280877950" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście">
       <option name="closed" value="true" />
@@ -82,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718137336683</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-implementation of optimization problem&#10;-not run just checked for syntax problems&#10;-next commit expected: today">
+      <option name="closed" value="true" />
+      <created>1718197987875</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718197987875</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście" />
-    <option name="LAST_COMMIT_MESSAGE" value="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście" />
+    <MESSAGE value="-implementation of optimization problem&#10;-not run just checked for syntax problems&#10;-next commit expected: today" />
+    <option name="LAST_COMMIT_MESSAGE" value="-implementation of optimization problem&#10;-not run just checked for syntax problems&#10;-next commit expected: today" />
   </component>
 </project>
