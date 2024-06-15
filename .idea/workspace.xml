@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="- hill climbing">
-      <change afterPath="$PROJECT_DIR$/src/tabu_algorithm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/notatki_do_projektu.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="- hill climbing working for both cases needed to use for istead of while and define number of iterations&#10;- added my notes in jupyter&#10;- created bigger data set by generate rand set function&#10;-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sample_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sample_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hill_climbing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hill_climbing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/notatki_do_projektu.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/temp/notatki_do_projektu.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,7 @@
       <workItem from="1718314526436" duration="187000" />
       <workItem from="1718446832384" duration="1157000" />
       <workItem from="1718453893276" duration="576000" />
-      <workItem from="1718454509273" duration="7115000" />
+      <workItem from="1718454509273" duration="8323000" />
     </task>
     <task id="LOCAL-00001" summary="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście">
       <option name="closed" value="true" />
@@ -128,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718447734840</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- hill climbing working for both cases needed to use for istead of while and define number of iterations&#10;- added my notes in jupyter&#10;- created bigger data set by generate rand set function&#10;-">
+      <option name="closed" value="true" />
+      <created>1718463247183</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718463247183</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +142,7 @@
     <MESSAGE value="Completed on 12.06.2024&#10;- exhaustive search &#10;- organized command line calls" />
     <MESSAGE value="Completed on 12.06.2024&#10;-changes in README.md" />
     <MESSAGE value="- hill climbing" />
-    <option name="LAST_COMMIT_MESSAGE" value="- hill climbing" />
+    <MESSAGE value="- hill climbing working for both cases needed to use for istead of while and define number of iterations&#10;- added my notes in jupyter&#10;- created bigger data set by generate rand set function&#10;-" />
+    <option name="LAST_COMMIT_MESSAGE" value="- hill climbing working for both cases needed to use for istead of while and define number of iterations&#10;- added my notes in jupyter&#10;- created bigger data set by generate rand set function&#10;-" />
   </component>
 </project>
