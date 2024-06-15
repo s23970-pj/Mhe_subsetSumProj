@@ -4,7 +4,7 @@ import random
 import argparse
 from optimize import generate_neighbors
 
-def hill_climbing(elements, target):
+def hill_climbing_deterministic(elements, target):
     current_set = random.sample(elements, random.randint(1, len(elements)))
     while True:
         current_sum = sum(current_set)
@@ -17,7 +17,7 @@ def hill_climbing(elements, target):
         current_set = next_set
     return current_set
 
-def random_hill_climbing(elements, target):
+def hill_climbing_random(elements, target):
     current_set = random.sample(elements, random.randint(1, len(elements)))
     while True:
         current_sum = sum(current_set)
@@ -31,9 +31,10 @@ def random_hill_climbing(elements, target):
     return current_set
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Hill climbing algorithm for subset sum problem")
-    parser.add_argument("--input", type=str, required=True, help="Input file containing the set of numbers")
-    parser.add_argument("--target", type=int, required=True, help="Target sum to find in the subsets")
+    parser = argparse.ArgumentParser(description="Algorytm wspinaczkowy dla problemu sumy podzbiorów")
+    parser.add_argument("--input", type=str, required=True, help="Plik wejściowy zawierający zestaw liczb")
+    parser.add_argument("--target", type=int, required=True, help="Docelowa suma do znalezienia w podzbiorach")
+    parser.add_argument("--type", type=str, required=True, choices=['deterministic', 'random'], help="Typ algorytmu wspinaczkowego do użycia")
 
     args = parser.parse_args()
 
@@ -42,19 +43,15 @@ if __name__ == "__main__":
 
     target = args.target
 
-    print("Input Set:", elements)
-    print("Target Sum:", target)
-    if target > sum(elements):
-        print("Target sum exceeds the sum of all numbers in the set")
-    else:
-        solution = hill_climbing(elements, target)
-        solution_2 = random_hill_climbing(elements, target)
-        if solution and sum(solution) == target:
-            print(f"Subset found that sums to {target} using hill climbing: {solution}")
-        else:
-            print(f"No subset found that sums to {target} using hill climbing")
+    print("Zestaw wejściowy:", elements)
+    print("Docelowa suma:", target)
 
-        if solution_2 and sum(solution_2) == target:
-            print(f"Subset found that sums to {target} using random hill climbing: {solution_2}")
-        else:
-            print(f"No subset found that sums to {target} using random hill climbing")
+    if args.type == 'deterministic':
+        solution = hill_climbing_deterministic(elements, target)
+    else:
+        solution = hill_climbing_random(elements, target)
+
+    if solution and sum(solution) == target:
+        print(f"Podzbiór znaleziony, który sumuje się do {target} używając {args.type} algorytmu wspinaczkowego: {solution}")
+    else:
+        print(f"Nie znaleziono podzbioru, który sumuje się do {target} używając {args.type} algorytmu wspinaczkowego")
