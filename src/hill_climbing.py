@@ -1,40 +1,58 @@
-# src/hill_climbing.py
-
 import random
 import argparse
 from optimize import generate_neighbors
 
-def hill_climbing_deterministic(elements, target):
-    current_set = random.sample(elements, random.randint(1, len(elements)))
-    while True:
-        current_sum = sum(current_set)
-        if current_sum == target:
-            return current_set
-        neighbors = generate_neighbors(current_set, elements)
-        next_set = max(neighbors, key=lambda s: min(sum(s), target) - sum(s))
-        if sum(next_set) == current_sum:
-            break
-        current_set = next_set
-    return current_set
+def residue(subset, target):
+    return abs(sum(subset) - target)
 
-def hill_climbing_random(elements, target):
-    current_set = random.sample(elements, random.randint(1, len(elements)))
-    while True:
-        current_sum = sum(current_set)
-        if current_sum == target:
-            return current_set
-        neighbors = generate_neighbors(current_set, elements)
-        next_set = random.choice(neighbors)
-        if sum(next_set) == current_sum:
+def hill_climbing_deterministic(elements, target, r):
+    current_subset = random.sample(elements, random.randint(1, len(elements)))
+    for _ in range(r):
+        neighbors = generate_neighbors(current_subset, elements)
+        next_set = min(neighbors, key=lambda s: residue(s, target))
+        if residue(next_set, target) >= residue(current_subset, target):
             break
-        current_set = next_set
-    return current_set
+        current_subset = next_set
+    return current_subset, residue(current_subset, target)
+
+def hill_climbing_random(elements, target, r):
+    current_subset = random.sample(elements, random.randint(1, len(elements)))
+    for _ in range(r):
+        neighbors = generate_neighbors(current_subset, elements)
+        next_set = random.choice(neighbors)
+        if residue(next_set, target) >= residue(current_subset, target):
+            break
+        current_subset = next_set
+    return current_subset, residue(current_subset, target)
+
+def hill_climbing(elements, target, q, r): #max ilosc prób, r tutaj muszę ograniczyć iteracje (poprzedni problem z whilem)
+    best_residue_deterministic = float('inf')
+    best_subset_deterministic = None
+
+    best_residue_random = float('inf')
+    best_subset_random = None
+
+    for _ in range(q):
+        subset_deterministic, res_deterministic = hill_climbing_deterministic(elements, target, r)
+        subset_random, res_random = hill_climbing_random(elements, target, r)
+
+        if res_deterministic < best_residue_deterministic:
+            best_residue_deterministic = res_deterministic
+            best_subset_deterministic = subset_deterministic
+
+        if res_random < best_residue_random:
+            best_residue_random = res_random
+            best_subset_random = subset_random
+
+    return (best_subset_deterministic, best_residue_deterministic), (best_subset_random, best_residue_random)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Algorytm wspinaczkowy dla problemu sumy podzbiorów")
-    parser.add_argument("--input", type=str, required=True, help="Plik wejściowy zawierający zestaw liczb")
-    parser.add_argument("--target", type=int, required=True, help="Docelowa suma do znalezienia w podzbiorach")
-    parser.add_argument("--type", type=str, required=True, choices=['deterministic', 'random'], help="Typ algorytmu wspinaczkowego do użycia")
+    parser = argparse.ArgumentParser(description="OPIS PL: Algorytm Wspinaczkowy: Program uruchamia algorytm wspinaczkowy w dwóch rodzajach podejść do problemu\n"
+                                                 "użyj polecenia $ python src/hill_climbing.py --input data/sample_input.txt --target [x] --q [ilość random subset] --r [liczba iteracji]" )
+    parser.add_argument("--input", type=str, required=True, help="Input file containing the set of numbers")
+    parser.add_argument("--target", type=int, required=True, help="Target sum to find in the subsets")
+    parser.add_argument("--q", type=int, required=True, help="Number of times to choose a random subset")
+    parser.add_argument("--r", type=int, required=True, help="Number of hill climbing iterations per subset")
 
     args = parser.parse_args()
 
@@ -42,16 +60,15 @@ if __name__ == "__main__":
         elements = list(map(int, file.read().strip().split()))
 
     target = args.target
+    q = args.q
+    r = args.r
 
-    print("Zestaw wejściowy:", elements)
-    print("Docelowa suma:", target)
+    print("Input Set:", elements)
+    print("Target Sum:", target)
+    print("Number of random subsets (q):", q)
+    print("Number of hill climbing iterations (r):", r)
 
-    if args.type == 'deterministic':
-        solution = hill_climbing_deterministic(elements, target)
-    else:
-        solution = hill_climbing_random(elements, target)
+    (best_subset_deterministic, best_residue_deterministic), (best_subset_random, best_residue_random) = hill_climbing(elements, target, q, r)
 
-    if solution and sum(solution) == target:
-        print(f"Podzbiór znaleziony, który sumuje się do {target} używając {args.type} algorytmu wspinaczkowego: {solution}")
-    else:
-        print(f"Nie znaleziono podzbioru, który sumuje się do {target} używając {args.type} algorytmu wspinaczkowego")
+    print(f"Deterministic: Best subset found that sums to near {target} with residue {best_residue_deterministic}: {best_subset_deterministic}")
+    print(f"Random: Best subset found that sums to near {target} with residue {best_residue_random}: {best_subset_random}")

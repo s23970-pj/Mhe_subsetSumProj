@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="- hill climbing">
+      <change afterPath="$PROJECT_DIR$/src/tabu_algorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/notatki_do_projektu.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sample_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sample_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hill_climbing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hill_climbing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -50,8 +57,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
-        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17011.127" />
+        <option value="bundled-python-sdk-48aec45f0201-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17011.127" />
       </set>
     </attachedChunks>
   </component>
@@ -78,6 +85,8 @@
       <workItem from="1718280877950" duration="2374000" />
       <workItem from="1718314526436" duration="187000" />
       <workItem from="1718446832384" duration="1157000" />
+      <workItem from="1718453893276" duration="576000" />
+      <workItem from="1718454509273" duration="7115000" />
     </task>
     <task id="LOCAL-00001" summary="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście">
       <option name="closed" value="true" />

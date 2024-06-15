@@ -23,8 +23,8 @@ Run any of the algorithms from the command line:
 
 ```bash
 TO GENERATE NEW SETS OF DATA:
-python src\generate_rand_set.py --size [size of multiset] --min_value [value] --max_value [value]  //to be completed with precise information
+python src/generate_rand_set.py --size [size of multiset] --min_value [value] --max_value [value]  //to be completed with precise information
 
 TO RUN DESIRED ALGORITHM:
-python .\src\exhaustive_search.py --input data\sample_input.txt --target 100
+python ./src/exhaustive_search.py --input data\sample_input.txt --target 100
 
