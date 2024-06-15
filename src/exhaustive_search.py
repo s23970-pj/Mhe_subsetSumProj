@@ -2,8 +2,8 @@
 from generate_rand_set import generate_random_set
 from optimize import subset_sum_objective, generate_random_solution
 import argparse
-def powerset(iterable):
-    s = list(iterable)
+def powerset(elements):
+    s = list(elements)
     result = [[]]
 
     for elem in s:

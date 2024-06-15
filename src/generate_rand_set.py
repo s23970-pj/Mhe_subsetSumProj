@@ -17,6 +17,6 @@ if __name__ == "__main__":
 
     print("Generated Set:", random_set)
 
-    # Save to file - separated by space, 'w' argument nadpisanie danych
+    # Save to file - separacja spacją, 'w' argument nadpisanie danych
     with open('data/sample_input.txt', 'w') as file:
         file.write(' '.join(map(str, random_set)))

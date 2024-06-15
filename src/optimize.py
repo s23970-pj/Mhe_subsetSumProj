@@ -2,7 +2,7 @@ import random
 
 
 def subset_sum_objective(subset, target):
-    return sum(subset)==target
+    return abs(sum(subset)==target)
 
 def generate_neighbors(curent_solution, elements):
     neighbors = []
