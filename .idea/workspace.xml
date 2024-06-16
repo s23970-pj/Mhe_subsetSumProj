@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-hill climbing nomenclature unficiation&#10;-start of tabu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exhaustive_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/exhaustive_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generate_rand_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generate_rand_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sample_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sample_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hill_climbing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hill_climbing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/optimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabu_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabu_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/notatki_do_projektu.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/temp/notatki_do_projektu.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <workItem from="1718446832384" duration="1157000" />
       <workItem from="1718453893276" duration="576000" />
       <workItem from="1718454509273" duration="12607000" />
-      <workItem from="1718470397092" duration="2642000" />
+      <workItem from="1718470397092" duration="6579000" />
     </task>
     <task id="LOCAL-00001" summary="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście">
       <option name="closed" value="true" />
@@ -150,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718467675651</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="-hill climbing nomenclature unficiation&#10;-start of tabu">
+      <option name="closed" value="true" />
+      <created>1718473313942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718473313942</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

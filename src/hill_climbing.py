@@ -18,7 +18,7 @@ def hill_climbing_deterministic(elements, target, r):
 def hill_climbing_random(elements, target, r):
     current_subset = generate_random_solution(elements)
     for _ in range(r):
-        neighbors = generate_neighbors(current_subset, elements)
+        neighbors = generate_neighbors(current_subset, elements) #cel ma być 10 i same 1
         next_set = random.choice(neighbors)
         if residue(next_set, target) >= residue(current_subset, target):
             break

@@ -4,7 +4,7 @@ import random
 def subset_sum_objective(subset, target):
     return abs(sum(subset)==target)
 
-def generate_neighbors(curent_solution, elements):
+def generate_neighbors(curent_solution, elements): # wszystkie możliwe liczy zoptymalizować
     neighbors = []
     for element in elements:
         if element not in curent_solution: #jezeli element nie znajduje się
