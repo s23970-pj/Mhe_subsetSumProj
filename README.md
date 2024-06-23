@@ -28,3 +28,5 @@ python src/generate_rand_set.py --size [size of multiset] --min_value [value] --
 TO RUN DESIRED ALGORITHM:
 python ./src/exhaustive_search.py --input data\sample_input.txt --target 100
 
+
+
