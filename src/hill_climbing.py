@@ -1,14 +1,14 @@
 import random
 import argparse
-from optimize import generate_neighbors, generate_random_solution
+from optimize import generate_neighbors_old, generate_random_solution_old
 
 def residue(subset, target):
     return abs(sum(subset) - target)
 
 def hill_climbing_deterministic(elements, target, r):
-    current_subset = generate_random_solution(elements)
+    current_subset = generate_random_solution_old(elements)
     for _ in range(r):
-        neighbors = generate_neighbors(current_subset, elements)
+        neighbors = generate_neighbors_old(current_subset, elements)
         next_set = min(neighbors, key=lambda s: residue(s, target))
         if residue(next_set, target) >= residue(current_subset, target):
             break
@@ -16,9 +16,9 @@ def hill_climbing_deterministic(elements, target, r):
     return current_subset, residue(current_subset, target)
 
 def hill_climbing_random(elements, target, r):
-    current_subset = generate_random_solution(elements)
+    current_subset = generate_random_solution_old(elements)
     for _ in range(r):
-        neighbors = generate_neighbors(current_subset, elements) #cel ma być 10 i same 1 - działa
+        neighbors = generate_neighbors_old(current_subset, elements) #cel ma być 10 i same 1 - działa
         next_set = random.choice(neighbors)
         if residue(next_set, target) >= residue(current_subset, target):
             break

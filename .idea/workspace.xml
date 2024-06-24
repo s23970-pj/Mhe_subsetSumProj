@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="- hill climbing">
-      <change afterPath="$PROJECT_DIR$/src/generate_neighbors_alt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/help.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/test_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="- tabu algorith">
+      <change afterPath="$PROJECT_DIR$/src/hill_climbing_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sample_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sample_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generate_neighbors_alt.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/new_neighbor_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hill_climbing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hill_climbing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabu_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabu_algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/notatki_do_projektu.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/temp/notatki_do_projektu.ipynb" afterDir="false" />
     </list>
@@ -41,31 +38,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.generate_neighbors_alt.executor": "Run",
-    "Python.generate_rand_set.executor": "Run",
-    "Python.optimize.executor": "Run",
-    "Python.tabu_algorithm.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Adrian/Desktop/Mhe/temp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.generate_neighbors_alt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.generate_rand_set.executor&quot;: &quot;Run&quot;,
+    &quot;Python.optimize.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tabu_algorithm.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adrian/Desktop/Mhe/temp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Adrian\Desktop\Mhe\temp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tabu_algorithm">
-    <configuration name="generate_neighbors_alt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.new_neighbor_test">
+    <configuration name="new_neighbor_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mhe_subsetSumProj" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,7 +76,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/generate_neighbors_alt.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Adrian\Desktop\Mhe\src\new_neighbor_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,8 +110,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.new_neighbor_test" />
         <item itemvalue="Python.tabu_algorithm" />
-        <item itemvalue="Python.generate_neighbors_alt" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +146,8 @@
       <workItem from="1718280877950" duration="2374000" />
       <workItem from="1718314526436" duration="187000" />
       <workItem from="1718446832384" duration="1157000" />
-      <workItem from="1719141562818" duration="6026000" />
+      <workItem from="1719141562818" duration="10241000" />
+      <workItem from="1719217621605" duration="10491000" />
     </task>
     <task id="LOCAL-00001" summary="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście">
       <option name="closed" value="true" />
@@ -191,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718447734840</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- tabu algorith">
+      <option name="closed" value="true" />
+      <created>1719175402442</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719175402442</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,10 +209,11 @@
     <MESSAGE value="Completed on 12.06.2024&#10;- exhaustive search &#10;- organized command line calls" />
     <MESSAGE value="Completed on 12.06.2024&#10;-changes in README.md" />
     <MESSAGE value="- hill climbing" />
-    <option name="LAST_COMMIT_MESSAGE" value="- hill climbing" />
+    <MESSAGE value="- tabu algorith" />
+    <option name="LAST_COMMIT_MESSAGE" value="- tabu algorith" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mhe$generate_neighbors_alt.coverage" NAME="generate_neighbors_alt Coverage Results" MODIFIED="1719160497575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Mhe$tabu_algorithm.coverage" NAME="tabu_algorithm Coverage Results" MODIFIED="1719160994046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Mhe$generate_neighbors_alt.coverage" NAME="generate_neighbors_alt Coverage Results" MODIFIED="1719229129452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
