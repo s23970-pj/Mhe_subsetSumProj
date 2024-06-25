@@ -42,9 +42,9 @@ def simulated_annealing(elements, target, iterations, temp_init, cooling_rate): 
         # Choose a neighbor using a normal distribution
         # HOW TO CHOOSE
         mu = len(neighbors) / 2
-        sigma = len(neighbors) / 6
-        neighbor_index = int(abs(random.gauss(mu, sigma)) % len(neighbors))
-        next_solution = neighbors[neighbor_index]
+        sigma = len(neighbors) / 8 #poeksperymentuj z sigmą
+        neighbor_index = int(abs(random.gauss(mu, sigma)) % len(neighbors)) #indeks sąsiada wybrany na podstawie wartości z rozkładu normalnego
+        next_solution = neighbors[neighbor_index] # abs zapewnia dodatni indeks
         next_residue = residue(next_solution, elements, target)
 
         if decide_accept(current_residue, next_residue, current_temp):
