@@ -1,3 +1,54 @@
+from optimize import generate_neighbors,generate_random_solution
+import random
+def residue(solution, elements, target):
+    subset_sum = sum([elements[i] for i in range(len(solution)) if solution[i] == 1])
+    return abs(subset_sum - target)
+
+
+def update_temperature(initial_temp, cooling_rate, iteration):
+
+    cooling_factor = cooling_rate ** iteration # współczynnik schładzania ppo potęgi iterancji
+
+    # nowa temperatura
+    new_temp = initial_temp * cooling_factor
+
+    return new_temp
+
+def decide_accept(current_residue, next_residue, current_temp):
+    delta_r = next_residue - current_residue
+    if delta_r < 0:
+        return True
+    else:
+        return random.uniform(0, 1) < math.exp(-delta_r / current_temp)
+
+
+def simulated_annealing(elements, target, iterations, initial_temp, cooling_rate): #all given by user
+    current_solution = generate_random_solution(len(elements))
+    best_solution = current_solution
+    current_temp = initial_temp
+
+    for iteration in range(iterations):
+        current_residue = residue(current_solution, elements, target)
+        best_residue = residue(best_solution, elements, target)
+
+        if current_residue < best_residue:
+            best_solution = current_solution
+
+        neighbors = generate_neighbors(current_solution)
+
+        # Choose a neighbor using a normal distribution
+        # HOW TO CHOOSE
+        #
+
+        if decide_accept(current_residue, next_residue, current_temp):
+            current_solution = next_solution
+
+        current_temp = update_temperature(initial_temp, cooling_rate, iteration)
+
+        if current_temp <= 0:
+            break
+
+    return best_solution, residue(best_solution, elements, target)
 
 
 
@@ -9,10 +60,7 @@
 
 
 
-
-
-
-
+# SKOPIOWANE Z TABU DOSTOSUJE JAK NAPISZE RESZTE
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Algorytm symulowanego wyżarzania ")
     parser.add_argument("--input", type=str, required=True, help="Input file containing the set of numbers")
