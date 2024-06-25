@@ -1,7 +1,8 @@
 import argparse
-
+import math
 from optimize import generate_neighbors,generate_random_solution
 import random
+
 def residue(solution, elements, target):
     subset_sum = sum([elements[i] for i in range(len(solution)) if solution[i] == 1])
     return abs(subset_sum - target)
@@ -40,7 +41,11 @@ def simulated_annealing(elements, target, iterations, temp_init, cooling_rate): 
 
         # Choose a neighbor using a normal distribution
         # HOW TO CHOOSE
-        #
+        mu = len(neighbors) / 2
+        sigma = len(neighbors) / 6
+        neighbor_index = int(abs(random.gauss(mu, sigma)) % len(neighbors))
+        next_solution = neighbors[neighbor_index]
+        next_residue = residue(next_solution, elements, target)
 
         if decide_accept(current_residue, next_residue, current_temp):
             current_solution = next_solution
@@ -73,10 +78,12 @@ if __name__ == "__main__":
 
 args = parser.parse_args()
 
-    with open(args.input, 'r') as file:
-        elements = list(map(int, file.read().strip().split()))
+with open(args.input, 'r') as file:
+    elements = list(map(int, file.read().strip().split()))
 
-    best_solution, best_residue = simulated_annealing(elements, args.target, args.iterations, args.temp_init, args.cooling_rate)
+best_solution, best_residue = simulated_annealing(elements, args.target, args.iterations, args.temp_init, args.cooling_rate)
 
-    print(
+print(
         f"Best subset found: {[elements[i] for i in range(len(best_solution)) if best_solution[i] == 1]} with residue: {best_residue}")
+
+#TORUN: python src/simulated_annealing.py --input data/sample_input.txt --target 64 --iterations 1000 --temp_init 100 --cooling_rate 0.3
