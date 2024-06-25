@@ -1,3 +1,5 @@
+import argparse
+
 from optimize import generate_neighbors,generate_random_solution
 import random
 def residue(solution, elements, target):
@@ -5,12 +7,12 @@ def residue(solution, elements, target):
     return abs(subset_sum - target)
 
 
-def update_temperature(initial_temp, cooling_rate, iteration):
+def update_temperature(temp_init, cooling_rate, iteration):
 
     cooling_factor = cooling_rate ** iteration # współczynnik schładzania ppo potęgi iterancji
 
     # nowa temperatura
-    new_temp = initial_temp * cooling_factor
+    new_temp = temp_init * cooling_factor
 
     return new_temp
 
@@ -22,10 +24,10 @@ def decide_accept(current_residue, next_residue, current_temp):
         return random.uniform(0, 1) < math.exp(-delta_r / current_temp)
 
 
-def simulated_annealing(elements, target, iterations, initial_temp, cooling_rate): #all given by user
+def simulated_annealing(elements, target, iterations, temp_init, cooling_rate): #all given by user
     current_solution = generate_random_solution(len(elements))
     best_solution = current_solution
-    current_temp = initial_temp
+    current_temp = temp_init
 
     for iteration in range(iterations):
         current_residue = residue(current_solution, elements, target)
@@ -43,7 +45,7 @@ def simulated_annealing(elements, target, iterations, initial_temp, cooling_rate
         if decide_accept(current_residue, next_residue, current_temp):
             current_solution = next_solution
 
-        current_temp = update_temperature(initial_temp, cooling_rate, iteration)
+        current_temp = update_temperature(temp_init, cooling_rate, iteration)
 
         if current_temp <= 0:
             break
@@ -62,18 +64,19 @@ def simulated_annealing(elements, target, iterations, initial_temp, cooling_rate
 
 # SKOPIOWANE Z TABU DOSTOSUJE JAK NAPISZE RESZTE
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Algorytm symulowanego wyżarzania ")
+    parser = argparse.ArgumentParser(description="Algorytm symulowanego wyżarzania / Annealing algorithm")
     parser.add_argument("--input", type=str, required=True, help="Input file containing the set of numbers")
     parser.add_argument("--target", type=int, required=True, help="Target sum to find in the subsets")
-    parser.add_argument("--tabu_size", type=int, required=True, help="Size of the Tabu list")
-    parser.add_argument("--r", type=int, required=True, help="Number of iterations for the search")
+    parser.add_argument("--iterations", type=int, required=True, help="Limit the number of iterations for the search")
+    parser.add_argument("--temp_init", type=float, required=True, help="Temperature at init")
+    parser.add_argument("--cooling_rate", type=float, required=True, help="cooling rate")
 
-    args = parser.parse_args()
+args = parser.parse_args()
 
     with open(args.input, 'r') as file:
         elements = list(map(int, file.read().strip().split()))
 
-    best_solution, best_residue = tabu_search(elements, args.target, args.r, args.tabu_size)
+    best_solution, best_residue = simulated_annealing(elements, args.target, args.iterations, args.temp_init, args.cooling_rate)
 
     print(
         f"Best subset found: {[elements[i] for i in range(len(best_solution)) if best_solution[i] == 1]} with residue: {best_residue}")
