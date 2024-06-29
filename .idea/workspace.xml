@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-simulated annealing algorithm excersise">
+    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-hill climbing nomenclature unficiation&#10;-start of tabu">
+      <change afterPath="$PROJECT_DIR$/src/crossover_method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/genetic_algorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mutation_method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/termination_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simulated_annealing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulated_annealing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -33,86 +41,29 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Python.generate_neighbors_alt.executor&quot;: &quot;Run&quot;,
     &quot;Python.generate_rand_set.executor&quot;: &quot;Run&quot;,
     &quot;Python.optimize.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tabu_algorithm.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adrian/Desktop/Mhe/temp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adrian\Desktop\Mhe\temp" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
-  </component>
-  <component name="RunManager" selected="Python.new_neighbor_test">
-    <configuration name="new_neighbor_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Mhe_subsetSumProj" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Adrian\Desktop\Mhe\src\new_neighbor_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tabu_algorithm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Mhe_subsetSumProj" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tabu_algorithm.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.new_neighbor_test" />
-        <item itemvalue="Python.tabu_algorithm" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
-        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17011.127" />
+        <option value="bundled-python-sdk-48aec45f0201-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17011.127" />
       </set>
     </attachedChunks>
   </component>
@@ -139,9 +90,9 @@
       <workItem from="1718280877950" duration="2374000" />
       <workItem from="1718314526436" duration="187000" />
       <workItem from="1718446832384" duration="1157000" />
-      <workItem from="1719141562818" duration="10241000" />
-      <workItem from="1719217621605" duration="13718000" />
-      <workItem from="1719309946601" duration="5726000" />
+      <workItem from="1718453893276" duration="576000" />
+      <workItem from="1718454509273" duration="12607000" />
+      <workItem from="1718470397092" duration="6579000" />
     </task>
     <task id="LOCAL-00001" summary="-added project structure&#10;-nadal pozyskuję informacje i próbuję znaleźć podejście">
       <option name="closed" value="true" />
@@ -183,71 +134,39 @@
       <option name="project" value="LOCAL" />
       <updated>1718447734840</updated>
     </task>
-    <task id="LOCAL-00006" summary="- tabu algorith">
+    <task id="LOCAL-00006" summary="- hill climbing working for both cases needed to use for istead of while and define number of iterations&#10;- added my notes in jupyter&#10;- created bigger data set by generate rand set function&#10;-">
       <option name="closed" value="true" />
-      <created>1719175402442</created>
+      <created>1718463247183</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1719175402442</updated>
+      <updated>1718463247183</updated>
     </task>
-    <task id="LOCAL-00007" summary="- tabu algorithm &#10;- corrected hill clibing for operation on new generate_neighbors function&#10;-new generate_neighbors function added and tested&#10;-">
+    <task id="LOCAL-00007" summary="-notes tabu search">
       <option name="closed" value="true" />
-      <created>1719245152391</created>
+      <created>1718464285605</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1719245152391</updated>
+      <updated>1718464285605</updated>
     </task>
-    <task id="LOCAL-00008" summary="-tabu algorithm with tabu_history list enabling the algorithm to go back when reaching local optimum&#10;-also added desrciption of current iteration for future better understanding of the algorithm">
+    <task id="LOCAL-00008" summary="-hill climbing nomenclature unficiation&#10;-start of tabu">
       <option name="closed" value="true" />
-      <created>1719247395136</created>
+      <created>1718467675651</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1719247395136</updated>
+      <updated>1718467675651</updated>
     </task>
-    <task id="LOCAL-00009" summary="-tabu algorithm with tabu_history list enabling the algorithm to go back when reaching local optimum&#10;-also added desrciption of current iteration for future better understanding of the algorithm">
+    <task id="LOCAL-00009" summary="-hill climbing nomenclature unficiation&#10;-start of tabu">
       <option name="closed" value="true" />
-      <created>1719247440825</created>
+      <created>1718473313942</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1719247440825</updated>
+      <updated>1718473313942</updated>
     </task>
-    <task id="LOCAL-00010" summary="-start of simulated annealing algorithm excersise">
-      <option name="closed" value="true" />
-      <created>1719247734572</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1719247734572</updated>
-    </task>
-    <task id="LOCAL-00011" summary="-start of simulated annealing algorithm excersise">
-      <option name="closed" value="true" />
-      <created>1719338504277</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1719338504277</updated>
-    </task>
-    <task id="LOCAL-00012" summary="-start of simulated annealing algorithm excersise">
-      <option name="closed" value="true" />
-      <created>1719338762136</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1719338762136</updated>
-    </task>
-    <task id="LOCAL-00013" summary="-simulated annealing algorithm excersise">
-      <option name="closed" value="true" />
-      <created>1719341761197</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1719341761197</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,15 +178,9 @@
     <MESSAGE value="Completed on 12.06.2024&#10;- exhaustive search &#10;- organized command line calls" />
     <MESSAGE value="Completed on 12.06.2024&#10;-changes in README.md" />
     <MESSAGE value="- hill climbing" />
-    <MESSAGE value="- tabu algorith" />
-    <MESSAGE value="- tabu algorithm &#10;- corrected hill clibing for operation on new generate_neighbors function&#10;-new generate_neighbors function added and tested&#10;-" />
-    <MESSAGE value="-tabu algorithm with tabu_history list enabling the algorithm to go back when reaching local optimum&#10;-also added desrciption of current iteration for future better understanding of the algorithm" />
-    <MESSAGE value="-start of simulated annealing algorithm excersise" />
-    <MESSAGE value="-simulated annealing algorithm excersise" />
-    <option name="LAST_COMMIT_MESSAGE" value="-simulated annealing algorithm excersise" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mhe$tabu_algorithm.coverage" NAME="tabu_algorithm Coverage Results" MODIFIED="1719160994046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/Mhe$generate_neighbors_alt.coverage" NAME="generate_neighbors_alt Coverage Results" MODIFIED="1719229129452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <MESSAGE value="- hill climbing working for both cases needed to use for istead of while and define number of iterations&#10;- added my notes in jupyter&#10;- created bigger data set by generate rand set function&#10;-" />
+    <MESSAGE value="-notes tabu search" />
+    <MESSAGE value="-hill climbing nomenclature unficiation&#10;-start of tabu" />
+    <option name="LAST_COMMIT_MESSAGE" value="-hill climbing nomenclature unficiation&#10;-start of tabu" />
   </component>
 </project>

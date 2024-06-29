@@ -46,6 +46,11 @@ def simulated_annealing(elements, target, iterations, temp_init, cooling_rate): 
         neighbor_index = int(abs(random.gauss(mu, sigma)) % len(neighbors)) #indeks sąsiada wybrany na podstawie wartości z rozkładu normalnego
         next_solution = neighbors[neighbor_index] # abs zapewnia dodatni indeks
         next_residue = residue(next_solution, elements, target)
+#problemy są dyskretne-->rozkład Gaussa jest funkcją ciągłą.
+        # Obejście tego problemu polega na zbliżeniu się do takiego rozkładu w kontekście odległości w
+        # dziedzinie funkcji i generowanie punktów "podobnych" w sposób taki,
+        # że najczęściej modyfikacja będzie niewielka, ale będzie malejące
+        # prawdopodobieństwo na modyfikacje coraz większe.
 
         if decide_accept(current_residue, next_residue, current_temp):
             current_solution = next_solution
