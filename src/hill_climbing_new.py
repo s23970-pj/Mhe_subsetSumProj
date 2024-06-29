@@ -9,26 +9,30 @@ def residue(subset, target):
 
 def hill_climbing_deterministic(elements, target, r):
     current_subset = generate_random_solution(len(elements))
+    residues=[] # tutaj modyfikacja żeby móz zrobić krzywą konwergencji
     for _ in range(r):
         neighbors = generate_neighbors(current_subset)
         next_set = min(neighbors, key=lambda s: residue([elements[i] for i in range(len(s)) if s[i] == 1], target))
-        if residue([elements[i] for i in range(len(next_set)) if next_set[i] == 1], target) >= residue(
-                [elements[i] for i in range(len(current_subset)) if current_subset[i] == 1], target):
+        current_residue = residue([elements[i] for i in range(len(current_subset)) if current_subset[i] == 1], target)
+        residues.append(current_residue)
+        if residue([elements[i] for i in range(len(next_set)) if next_set[i] == 1], target) >= current_residue:
             break
         current_subset = next_set
-    return current_subset, residue([elements[i] for i in range(len(current_subset)) if current_subset[i] == 1], target)
+    return current_subset, residue([elements[i] for i in range(len(current_subset)) if current_subset[i] == 1], target), residues
 
 
 def hill_climbing_random(elements, target, r):
     current_subset = generate_random_solution(len(elements))
+    residues = []
     for _ in range(r):
         neighbors = generate_neighbors(current_subset)
         next_set = random.choice(neighbors)
-        if residue([elements[i] for i in range(len(next_set)) if next_set[i] == 1], target) >= residue(
-                [elements[i] for i in range(len(current_subset)) if current_subset[i] == 1], target):
+        current_residue = residue([elements[i] for i in range(len(current_subset)) if current_subset[i] == 1], target)
+        residues.append(current_residue)
+        if residue([elements[i] for i in range(len(next_set)) if next_set[i] == 1], target) >= current_residue:
             break
         current_subset = next_set
-    return current_subset, residue([elements[i] for i in range(len(current_subset)) if current_subset[i] == 1], target)
+    return current_subset, residue([elements[i] for i in range(len(current_subset)) if current_subset[i] == 1], target), residues
 
 
 def hill_climbing(elements, target, q, r):

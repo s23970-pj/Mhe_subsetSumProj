@@ -53,7 +53,7 @@ def genetic_algorithm(elements, target, population_size, max_iterations, crossov
     return best_solution, best_residue
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="ALGORYTM GENETYCZNY DLA SUMY PODZBIORU\GENETIC ALGORITHM FOR SUBSETSUM")
+    parser = argparse.ArgumentParser(description="ALGORYTM GENETYCZNY DLA SUMY PODZBIORU, GENETIC ALGORITHM FOR SUBSETSUM")
     parser.add_argument("--input", type=str, required=True, help="Input file containing the set of numbers")
     parser.add_argument("--target", type=int, required=True, help="Target sum to find in the subsets")
     parser.add_argument("--population", type=int, required=True, help="Population size")
@@ -89,5 +89,19 @@ if __name__ == "__main__":
 
     print(f"Best subset found: {[elements[i] for i in range(len(best_solution)) if best_solution[i] == 1]} with residue: {best_residue}")
 
-# RUN: python src/genetic_algorithm.py --input data/sample_input.txt --target 10 --population 50 --iterations 1000 --crossover one_point --mutation flip_bit --termination max_iterations --elit
+# RUN:  python src/genetic_algorithm.py --input data/sample_input.txt --target 10 --population 50 --iterations 1000 --crossover one_point --mutation flip_bit --termination max_iterations --elit
 # PRZYGOTOWAĆ PARĘ GOTOWYCH POLECEŃ NA POKAZANIE SZYBKO
+
+#Polecenie 1: do przeprowadzenia na małej bazie do 100 elementów, z argumentem --elit i bez
+#python src/generate_rand_set.py --size 100 --min_value 1 --max_value 100
+#python src/genetic_algorithm.py --input data/sample_input.txt --target 10 --population 50 --iterations 1000 --crossover one_point --mutation flip_bit --termination max_iterations --elit
+#python src/genetic_algorithm.py --input data/sample_input.txt --target 10 --population 50 --iterations 1000 --crossover one_point --mutation flip_bit --termination max_iterations
+
+#Polecenia 2: Aby zauważyć rozbieżność między posiadaniem elity i jej brakiem
+#python src/generate_rand_set.py --size 300 --min_value 1 --max_value 100
+#python src/genetic_algorithm.py --input data/sample_input.txt --target 54 --population 50 --iterations 1000 --crossover one_point --mutation flip_bit --termination max_iterations --elit with residue: 0
+#python src/genetic_algorithm.py --input data/sample_input.txt --target 54 --population 50 --iterations 1000 --crossover one_point --mutation flip_bit --termination max_iterations with residue: 2000
+
+#Polecenia 3: (Również dla zestawu 300 elementów)
+#python src/genetic_algorithm.py --input data/sample_input.txt --target 90 --population 50 --iterations 1000 --crossover two_points --mutation swap_bits --termination min_residue --elit with residue: 86
+#python src/genetic_algorithm.py --input data/sample_input.txt --target 90 --population 50 --iterations 1000 --crossover two_points --mutation swap_bits --termination min_residue with residue: 84

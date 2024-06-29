@@ -14,6 +14,7 @@ def tabu_search(elements, target, r, tabu_size):
     best_residue = residue(current_solution, elements, target)
     tabu_list = []
     tabu_history = []
+    residues = []
 
     for iteration in range(r):
         print(f"iteracja {iteration+1}")
@@ -34,11 +35,13 @@ def tabu_search(elements, target, r, tabu_size):
 
         best_neighbor = min(feasible_neighbors, key=lambda s: residue(s, elements, target))
         best_neighbor_residue = residue(best_neighbor, elements, target)
+        residues.append(best_residue)
 
         if best_neighbor_residue < best_residue:
             best_solution = best_neighbor
             best_residue = best_neighbor_residue
-
+        if best_residue == 0:
+            break
         tabu_list.append(current_solution)
         if len(tabu_list) > tabu_size:
             tabu_list.pop(0)
@@ -46,7 +49,7 @@ def tabu_search(elements, target, r, tabu_size):
         #print(tabu_history)
         current_solution = best_neighbor
 
-    return best_solution, best_residue
+    return best_solution, best_residue, residues
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="ALGORYTM TABU")
