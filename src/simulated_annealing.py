@@ -8,13 +8,15 @@ def residue(solution, elements, target):
     return abs(subset_sum - target)
 
 
-def update_temperature(temp_init, cooling_rate, iteration):
+def update_temperature(initial_temp, cooling_rate, iteration, min_temp=1e-8):
+    new_temp = max(initial_temp * (cooling_rate ** iteration), min_temp)
+    return new_temp
+def update_temperature(temp_init, cooling_rate, iteration, min_temp=1e-8):
 
     cooling_factor = cooling_rate ** iteration # współczynnik schładzania ppo potęgi iterancji
 
     # nowa temperatura
-    new_temp = temp_init * cooling_factor
-
+    new_temp = max(temp_init * cooling_factor, min_temp)
     return new_temp
 
 def decide_accept(current_residue, next_residue, current_temp):
@@ -70,8 +72,7 @@ def simulated_annealing(elements, target, iterations, temp_init, cooling_rate): 
 
 
 
-
-
+#
 # SKOPIOWANE Z TABU DOSTOSUJE JAK NAPISZE RESZTE
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Algorytm symulowanego wyżarzania / Annealing algorithm")

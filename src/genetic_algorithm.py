@@ -16,8 +16,11 @@ def select_parents(population, fitness):
     return parent1, parent2
 
 def genetic_algorithm(elements, target, population_size, max_iterations, crossover_method, mutation_method, termination_method, elitism=False):
+
     population = [generate_random_solution(len(elements)) for _ in range(population_size)]
-    best_solution = min(population, key=lambda sol: residue(sol, elements, target))
+
+    best_solution = min(population, key=lambda sol: residue(sol, elements, target)) #
+
     best_residue = residue(best_solution, elements, target)
 
     for iteration in range(max_iterations):

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-hill climbing nomenclature unficiation&#10;-start of tabu">
-      <change afterPath="$PROJECT_DIR$/src/crossover_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/genetic_algorithm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mutation_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/termination_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mhe_subsetSumProj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-genetic algorithm &#10;-2 crossover methods&#10;-2 termination methods&#10;-2 mutation methods&#10;-elit">
+      <change afterPath="$PROJECT_DIR$/data/experiment_results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/experiment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/genetic_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genetic_algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simulated_annealing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulated_annealing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,25 +36,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.generate_rand_set.executor&quot;: &quot;Run&quot;,
-    &quot;Python.optimize.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.experiment.executor": "Run",
+    "Python.generate_rand_set.executor": "Run",
+    "Python.optimize.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="experiment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Mhe_subsetSumProj" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/experiment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.experiment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -166,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718473313942</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="-genetic algorithm &#10;-2 crossover methods&#10;-2 termination methods&#10;-2 mutation methods&#10;-elit">
+      <option name="closed" value="true" />
+      <created>1719650885800</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719650885800</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +217,10 @@
     <MESSAGE value="- hill climbing working for both cases needed to use for istead of while and define number of iterations&#10;- added my notes in jupyter&#10;- created bigger data set by generate rand set function&#10;-" />
     <MESSAGE value="-notes tabu search" />
     <MESSAGE value="-hill climbing nomenclature unficiation&#10;-start of tabu" />
-    <option name="LAST_COMMIT_MESSAGE" value="-hill climbing nomenclature unficiation&#10;-start of tabu" />
+    <MESSAGE value="-genetic algorithm &#10;-2 crossover methods&#10;-2 termination methods&#10;-2 mutation methods&#10;-elit" />
+    <option name="LAST_COMMIT_MESSAGE" value="-genetic algorithm &#10;-2 crossover methods&#10;-2 termination methods&#10;-2 mutation methods&#10;-elit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Mhe_subsetSumProj$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1719659269454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
