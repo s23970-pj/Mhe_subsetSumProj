@@ -87,3 +87,4 @@ if __name__ == "__main__":
         f"Deterministic: Best subset found that sums to near {target} with residue {best_residue_deterministic}: {[elements[i] for i in range(len(best_subset_deterministic)) if best_subset_deterministic[i] == 1]}")
     print(
         f"Random: Best subset found that sums to near {target} with residue {best_residue_random}: {[elements[i] for i in range(len(best_subset_random)) if best_subset_random[i] == 1]}")
+#Author: Adrian Goik s23970

@@ -25,3 +25,4 @@ if __name__ == '__main__':
     rand_solution = generate_random_solution(4)
     print("random solution", rand_solution)
     generate_neighbors(rand_solution)
+#Author: Adrian Goik s23970

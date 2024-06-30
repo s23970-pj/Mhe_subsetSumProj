@@ -72,3 +72,4 @@ if __name__ == "__main__":
 
     print(f"Deterministic: Best subset found that sums to near {target} with residue {best_residue_deterministic}: {best_subset_deterministic}")
     print(f"Random: Best subset found that sums to near {target} with residue {best_residue_random}: {best_subset_random}")
+#Author: Adrian Goik s23970

@@ -69,3 +69,4 @@ if __name__ == "__main__":
         f"Best subset found: {[elements[i] for i in range(len(best_solution)) if best_solution[i] == 1]} with residue: {best_residue}")
 
 # TORUN: python src/tabu_algorithm.py --input data/sample_input.txt --target 10 --tabu_size 5 --r 100
+#Author: Adrian Goik s23970

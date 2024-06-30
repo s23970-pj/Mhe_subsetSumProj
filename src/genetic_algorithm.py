@@ -105,3 +105,4 @@ if __name__ == "__main__":
 #Polecenia 3: (Również dla zestawu 300 elementów)
 #python src/genetic_algorithm.py --input data/sample_input.txt --target 90 --population 50 --iterations 1000 --crossover two_points --mutation swap_bits --termination min_residue --elit with residue: 86
 #python src/genetic_algorithm.py --input data/sample_input.txt --target 90 --population 50 --iterations 1000 --crossover two_points --mutation swap_bits --termination min_residue with residue: 84
+#Author: Adrian Goik s23970

@@ -11,3 +11,6 @@ def crossover_two_points(parent1, parent2):
     child1 = parent1[:point1] + parent2[point1:point2] + parent1[point2:]
     child2 = parent2[:point1] + parent1[point1:point2] + parent2[point2:]
     return child1, child2
+
+
+#Author: Adrian Goik s23970

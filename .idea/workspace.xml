@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-Readme file corrected">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crossover_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/crossover_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhaustive_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/exhaustive_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generate_rand_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generate_rand_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/genetic_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genetic_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/help.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hill_climbing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hill_climbing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hill_climbing_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hill_climbing_new.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mutation_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mutation_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/new_neighbor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/new_neighbor_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulated_annealing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulated_annealing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabu_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabu_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/termination_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/termination_method.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719765229092</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="-Readme file corrected">
+      <option name="closed" value="true" />
+      <created>1719784555404</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719784555404</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

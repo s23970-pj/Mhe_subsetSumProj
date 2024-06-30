@@ -20,4 +20,4 @@ if __name__ == "__main__":
     # Save to file - separacja spacją, 'w' argument nadpisanie danych
     with open('data/sample_input.txt', 'w') as file:
         file.write(' '.join(map(str, random_set)))
-
+#Author: Adrian Goik s23970

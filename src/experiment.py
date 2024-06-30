@@ -111,3 +111,4 @@ if __name__ == "__main__":
         print(f"Memory Usage: {result['memory_usage']} bytes")
         print("=" * 40)
 # TORUN: python src/experiment.py --input data/sample_input.txt --target 10 --iterations 10 --tabu_size 5
+#Author: Adrian Goik s23970

@@ -9,3 +9,5 @@ def generate_neighbors(curent_solution, elements): # wszystkie możliwe liczy zo
             new_solution.remove(element)
             neighbors.append(new_solution)
     return neighbors
+
+#Author: Adrian Goik s23970

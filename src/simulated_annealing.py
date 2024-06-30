@@ -89,3 +89,4 @@ print(
         f"Best subset found: {[elements[i] for i in range(len(best_solution)) if best_solution[i] == 1]} with residue: {best_residue}")
 
 #TORUN: python src/simulated_annealing.py --input data/sample_input.txt --target 64 --iterations 1000 --temp_init 100 --cooling_rate 0.3
+#Author: Adrian Goik s23970

@@ -38,3 +38,4 @@ def generate_neighbors(current_solution):
 def generate_random_solution(list_length):
     return [random.randint(0, 1) for _ in range(list_length)]
 
+#Author: Adrian Goik s23970

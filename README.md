@@ -1,5 +1,5 @@
 # Subset Sum Problem Project
-
+## Author : Adrian Goik s23970
 ## Description
 
 The subset sum problem (SSP) is a decision problem in computer science. In its most general formulation, there is a multiset S

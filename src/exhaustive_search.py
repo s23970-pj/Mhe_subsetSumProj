@@ -43,3 +43,5 @@ if __name__ == "__main__":
             print(f"Subset found that sums to {target}: {solution}")
         else:
             print(f"No subset found that sums to {target}")
+
+#Author: Adrian Goik s23970
