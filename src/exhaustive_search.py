@@ -1,6 +1,6 @@
 #algorytm bardzo nieefektywny O(2^n*n), dlatego mały trik sprawdzenia czy target jest mniejszy niż największy element listy
 from generate_rand_set import generate_random_set
-from optimize import subset_sum_objective, generate_random_solution
+from optimize import subset_sum_objective, generate_random_solution_old
 import argparse
 def powerset(elements):
     s = list(elements)
