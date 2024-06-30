@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0748bb8-02f6-4e54-abfa-b4ba4df2055d" name="Changes" comment="-Readme file corrected">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/new_neighbor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/new_neighbor_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulated_annealing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulated_annealing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabu_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabu_algorithm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719761636137</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="-Readme file corrected">
+      <option name="closed" value="true" />
+      <created>1719765229092</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719765229092</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +261,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mhe_subsetSumProj$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1719761284831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/Mhe_subsetSumProj$new_neighbor_test.coverage" NAME="new_neighbor_test Coverage Results" MODIFIED="1719762663851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Mhe_subsetSumProj$new_neighbor_test.coverage" NAME="new_neighbor_test Coverage Results" MODIFIED="1719772664782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

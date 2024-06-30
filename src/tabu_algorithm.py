@@ -14,7 +14,7 @@ def tabu_search(elements, target, r, tabu_size):
     best_residue = residue(current_solution, elements, target)
     tabu_list = []
     tabu_history = []
-    residues = []
+    residues = [] #dla eksperymentu
 
     for iteration in range(r):
         print(f"iteracja {iteration+1}")
