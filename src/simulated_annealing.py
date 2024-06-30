@@ -7,10 +7,6 @@ def residue(solution, elements, target):
     subset_sum = sum([elements[i] for i in range(len(solution)) if solution[i] == 1])
     return abs(subset_sum - target)
 
-
-def update_temperature(initial_temp, cooling_rate, iteration, min_temp=1e-8):
-    new_temp = max(initial_temp * (cooling_rate ** iteration), min_temp)
-    return new_temp
 def update_temperature(temp_init, cooling_rate, iteration, min_temp=1e-8):
 
     cooling_factor = cooling_rate ** iteration # współczynnik schładzania ppo potęgi iterancji

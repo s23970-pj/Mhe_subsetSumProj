@@ -22,6 +22,6 @@ def generate_neighbors(current_solution):
 def generate_random_solution(length):
     return [random.randint(0, 1) for _ in range(length)]
 if __name__ == '__main__':
-    rand_solution = generate_random_solution(8)
-    print("list", rand_solution)
+    rand_solution = generate_random_solution(4)
+    print("random solution", rand_solution)
     generate_neighbors(rand_solution)

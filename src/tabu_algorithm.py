@@ -26,7 +26,7 @@ def tabu_search(elements, target, r, tabu_size):
         neighbors = generate_neighbors(current_solution)
         feasible_neighbors = [n for n in neighbors if n not in tabu_list]
 
-        if not feasible_neighbors:
+        if not feasible_neighbors:  # zaimplementowany mechanizm cofania
             if tabu_history: #sprawdzenie czy lista jest pusta
                 current_solution=tabu_history.pop() #wróć nazad
                 continue
@@ -41,9 +41,9 @@ def tabu_search(elements, target, r, tabu_size):
             best_solution = best_neighbor
             best_residue = best_neighbor_residue
         if best_residue == 0:
-            break
+            break  #warunek zakończenia
         tabu_list.append(current_solution)
-        if len(tabu_list) > tabu_size:
+        if len(tabu_list) > tabu_size:  # usunięcie najstarszego rozwiązania jeżeli nasza lista długością przekracza rozmiar tabu
             tabu_list.pop(0)
         tabu_history.append(current_solution)
         #print(tabu_history)
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     with open(args.input, 'r') as file:
         elements = list(map(int, file.read().strip().split()))
 
-    best_solution, best_residue = tabu_search(elements, args.target, args.r, args.tabu_size)
+    best_solution, best_residue, residues = tabu_search(elements, args.target, args.r, args.tabu_size)
 
     print(
         f"Best subset found: {[elements[i] for i in range(len(best_solution)) if best_solution[i] == 1]} with residue: {best_residue}")
